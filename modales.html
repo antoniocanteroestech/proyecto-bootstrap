@@ -7,9 +7,10 @@
 		    <meta name="description" content="">
 		    <meta name="viewport" content="width=device-width, initial-scale=1">
 		    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
 		    <link rel="stylesheet" href="css/normalize.min.css">
 		    <link rel="stylesheet" href="css/main.css">
+		    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 		</head>
 		<body>
 			<div class="header-container">
@@ -24,12 +25,505 @@
 		            </header>
 		        </div>
 
-		        <div class="main-container">
-		            <div class="main wrapper clearfix">
-		            </div>
-		        </div>
+		        <section class="container mt-5">
+		        	<h2 class="h1 text-info">Modals</h2>
+		        	<p class="text-info">
+		        		The Modal is a dialog box/popup window which can be used for lightboxes, user notifications, UI enhancements, e-commerce components and many other cases. It's easily customized. You can manipulate size, position, and content.
+		        	</p>
+		        	<article class="mt-5">
+		        		<div>
+			        		<h2 class="text-info">Demo</h2>
+			        		<p class="text-info">Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.</p>
+				            <div class="mt-4">
+				            	<button class="btn btn-info" data-toggle="modal" data-target="#firstModal">Launch Model</button>
+				            	<div class="modal fade" id="firstModal">
+				            		<div class="modal-dialog">
+				            			<div class="modal-content">
+				            				<div class="modal-header">
+				            					<h4 class="modal-title">Hello World</h4>
+				            						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				            							<span aria-hidden="true">&times;</span>
+				            						</button>
+				            				</div>
+				            				<div class="modal-body">
+				            					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eos eveniet facere veritatis maxime, illum temporibus molestias incidunt voluptates quibusdam.</p>
+				            				</div>
+				            				<div class="modal-footer">
+				            					<button class="btn btn-danger" data-dismiss="modal">Close</button>
+				            				</div>
+				            			</div>
+				            		</div>
+				            	</div>
+				            </div>
+				        </div>
+		            	<div class="mt-3">
+		            		<textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
+<button class="btn btn-primary" data-toggle="modal" data-target="#firstModal">Launch Model</button>
+<div class="modal fade" id="firstModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Hello World</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+			</div>
+		<div class="modal-body">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eos eveniet facere veritatis maxime, illum temporibus molestias incidunt voluptates quibusdam.</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div>
+	</div>
+</div>
+		            		</textarea>
+		            	</div>
+		        	</article>
+		        	<article class="mt-4">
+		        		<div>
+			        		<h2 class="text-info">Vertically centered</h2>
+			        		<p class="text-info">Add .modal-dialog-centered to .modal-dialog to vertically center the modal.</p>
+				            <div class="mt-4">
+				            	<button class="btn btn-info" data-toggle="modal" data-target="#secondModal">Launch Model</button>
+				            	<div class="modal fade" id="secondModal">
+				            		<div class="modal-dialog modal-dialog-centered">
+				            			<div class="modal-content">
+				            				<div class="modal-header">
+				            					<h4 class="modal-title">Hello World</h4>
+				            					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				            						<span aria-hidden="true">&times;</span>
+				            					</button>
+				            				</div>
+				            				<div class="modal-body">
+				            					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eos eveniet facere veritatis maxime, illum temporibus molestias incidunt voluptates quibusdam.</p>
+				            				</div>
+				            				<div class="modal-footer">
+				            					<button class="btn btn-danger" data-dismiss="modal">Close</button>
+				            				</div>
+				            			</div>
+				            		</div>
+				            	</div>
+				            </div>
+				        </div>
+				        <div class="mt-3">
+				        	<textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
+<button class="btn btn-info" data-toggle="modal" data-target="#secondModal">Launch Model</button>
+<div class="modal fade" id="secondModal">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Hello World</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eos eveniet facere veritatis maxime, illum temporibus molestias incidunt voluptates quibusdam.</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+				        	</textarea>
+				        </div>
+		        	</article>
+		        	<article class="mt-4">
+		        		<div>
+			        		<h2 class="text-info">Long Modal</h2>
+			        		<p class="text-info">When modals become too long for the user’s viewport or device, they scroll independent of the page itself. Try the demo below to see what we mean.</p>
+				            <div class="mt-4">
+				            	<button class="btn btn-info" data-toggle="modal" data-target="#thirdModal">Launch Model</button>
+				            	<div class="modal fade" id="thirdModal">
+				            		<div class="modal-dialog" role="document">
+				            			<div class="modal-content">
+				            				<div class="modal-header">
+				            					<h4 class="modal-title">Hello World</h4>
+				            					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				            						<span aria-hidden="true">&times;</span>
+				            					</button>
+				            				</div>
+				            				<div class="modal-body">
+				            					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga a quas dolorem hic, magnam quisquam molestias? Modi tempora repellat eaque rem tenetur consequatur eum aut, deleniti obcaecati sit quo unde a qui veniam explicabo recusandae sequi doloremque quasi, at ipsum, dicta, saepe dolores perspiciatis! Animi quos facilis nesciunt aliquam sint mollitia, temporibus voluptatum modi commodi impedit assumenda, qui, at saepe molestiae necessitatibus, optio. Provident voluptatum optio repellat culpa magnam, modi odit soluta tenetur hic ut enim laboriosam possimus inventore aliquid assumenda maxime voluptas sapiente illo distinctio esse illum earum. Impedit, voluptatibus, accusamus. Est inventore alias, minus magnam, eius odio ut voluptates velit nihil eveniet fugit adipisci eaque nobis accusamus quidem officia provident tenetur ab explicabo quae nam, unde autem quod cupiditate quasi. Quasi fuga, reprehenderit neque et unde sed tempore dolore numquam, repudiandae, ullam ut! Nobis in dolores, tempore blanditiis alias iusto. Quaerat dolorum in nihil repudiandae earum qui facere dignissimos ratione pariatur iure unde tempore harum assumenda aliquid est officiis eligendi nisi, quas, sed deleniti quasi placeat, animi! Molestiae minus quia ex adipisci libero excepturi odio, accusantium aspernatur eligendi nisi rem, aliquid repudiandae recusandae nam consequuntur in pariatur consequatur earum nostrum et molestias modi deleniti a. Quia perferendis quidem animi placeat vel molestiae temporibus atque ipsa cumque esse recusandae ut quis enim commodi asperiores, tempora possimus, ea quos hic culpa libero fugiat ratione, voluptatem a! Similique eveniet dolor asperiores, ab voluptatem nobis veritatis dolores autem deleniti! Voluptatem ea rerum praesentium esse, sit fugiat nisi a itaque rem veritatis sunt illo, sint dolores, iure repudiandae ab officia ipsum nesciunt minima quae. Molestias, nemo, nobis! Dicta, sequi, laudantium. Quia voluptates ab voluptate veritatis fugit dolorem distinctio corporis cumque laudantium dolores ipsam officia quidem iste non commodi nemo, nobis ratione reprehenderit natus dolore impedit obcaecati, odit. Reiciendis error vero vitae cupiditate porro laboriosam quam, officia maiores optio saepe excepturi exercitationem modi explicabo soluta aliquam nisi quo repellendus ab autem voluptatibus rerum! Aperiam molestiae repellendus nulla sunt est sit atque ipsum illum recusandae veniam, ratione expedita, quis nam error quos quam doloribus? Incidunt repellendus harum odit soluta? Molestiae fuga consectetur ea, quasi tempora dolores, cupiditate iste, repellendus quidem commodi ipsa recusandae fugiat quia adipisci, laudantium? Non quam facilis quis vel nesciunt doloribus sed nulla error corporis beatae sit recusandae ipsam aut reprehenderit minima, dolore voluptatem eum sapiente tenetur voluptatibus ullam blanditiis, esse id fugit aspernatur? Facilis hic porro eius saepe veniam nemo est ea suscipit quos soluta nam temporibus tempora, maxime expedita, at aliquid, quis. Magnam possimus aliquid dolores assumenda omnis eum a nobis perspiciatis harum eaque eos delectus vero cum est minus, quasi consequuntur blanditiis neque illum dolor, ex rerum, suscipit. Sed fugit aspernatur distinctio consequuntur possimus quaerat necessitatibus illum, reprehenderit deserunt quasi animi molestiae tempore architecto natus maxime eum obcaecati doloribus iusto sit autem sunt quisquam modi! Ad maiores nulla ullam quas vitae inventore repellendus cupiditate eius repellat. Corrupti nostrum aperiam ut ipsa perferendis, vero fugiat ullam natus esse dicta debitis corporis sed voluptatem eos dignissimos! Eius voluptate iste, pariatur libero aspernatur commodi consectetur inventore, consequatur perferendis aut voluptatem. Sit odit tenetur in at? Vel facilis, iusto! Cupiditate laborum a animi architecto praesentium eos culpa, numquam vel ab, rerum magni omnis delectus tempora perferendis cumque quisquam nam voluptas deserunt quia obcaecati excepturi quo ut officia voluptates unde. Iste, perferendis illum maiores fugit quam animi fugiat, omnis iusto totam beatae. Minus qui quis cupiditate magni molestiae, illo, aliquid aliquam enim consectetur ipsa adipisci aperiam fugit odit dolore maiores. Eum perspiciatis facere, ipsa aliquid asperiores iure doloribus eaque, nobis consectetur officiis natus cupiditate consequatur architecto tenetur sint possimus, maiores, illo amet blanditiis tempora voluptatibus accusantium minus non. Placeat deserunt dolor, ducimus molestias amet, laborum laudantium enim facilis. Consequatur, incidunt voluptatem. Aperiam pariatur, tenetur sint nam perferendis, laudantium molestias ratione minima, voluptate repellendus placeat est. Distinctio eius a iusto. Vitae repudiandae incidunt, tempora molestias, ipsam quisquam nobis ut est sit quasi sed dolorem cumque amet nostrum omnis sapiente tenetur quaerat, quae consequatur cupiditate deserunt non recusandae illum odit. Animi alias possimus autem, magni dolorum praesentium. Aspernatur impedit, praesentium consequuntur asperiores incidunt molestiae fugiat obcaecati, minus dignissimos dolorum, dolore. Ipsum provident odit, autem unde, rerum illum enim sunt excepturi pariatur quibusdam distinctio! Quod ipsum sed numquam qui quasi, ab amet adipisci dolor laboriosam commodi alias delectus error architecto tempore rerum perferendis earum. Eum, minus libero ex ea odit ad sequi vitae voluptate dolorum, quidem, quisquam alias enim et atque est qui odio ipsam molestias doloribus aperiam neque deleniti corporis expedita laudantium! Rerum explicabo natus ut, ipsam iure sed libero, vel incidunt delectus sapiente ab quod! Possimus nisi similique cupiditate qui ea harum quae reiciendis dolores odio non vel enim atque, voluptatem quibusdam dignissimos quidem error, obcaecati in ipsa repudiandae at tempore architecto. Culpa unde et quod dolores quibusdam mollitia velit adipisci tempora nobis quidem ad, eos laudantium impedit modi ab, blanditiis magni quas in, illo eveniet aliquam placeat reprehenderit? Modi quisquam officiis placeat architecto quae quam, blanditiis, omnis provident deleniti animi sequi ullam unde minima perspiciatis consectetur dolorem libero magnam error! Repellendus saepe quis accusamus est dolores odit iure adipisci sapiente consequuntur autem nulla soluta voluptas deserunt eaque pariatur laboriosam, magni placeat! Distinctio sit beatae, ut laudantium dolorum, eos dolor quam mollitia. Inventore eum nam ex sint, quia nobis similique! Quas repudiandae consequuntur praesentium assumenda tempora quidem sequi! Iusto ad reiciendis, nisi. Id quos ipsam nesciunt asperiores porro rerum soluta quasi animi vel, neque rem nostrum dolorem eaque sapiente, reprehenderit totam optio. Eligendi cumque tempore repellendus quis culpa eaque aliquam vero ad? Aliquam et, neque quas dolore voluptate provident atque alias nesciunt ipsam cumque culpa! Nobis aspernatur autem laborum nulla illo molestiae commodi nisi, rerum, impedit molestias eos soluta eius, incidunt quas cumque velit perferendis doloribus. Vitae ipsam cumque quia quo sint doloremque magni, quae inventore eos temporibus soluta repellendus quasi, quod odit, excepturi est. Dignissimos adipisci officia distinctio eius tempora deserunt aliquam nobis hic reprehenderit recusandae, culpa voluptates. Quibusdam tempore dolores nulla. Necessitatibus rem voluptas in laudantium hic, eveniet consequuntur aperiam! Sed, ab, fugiat!</p>
+				            				</div>
+				            				<div class="modal-footer">
+				            					<button class="btn btn-danger" data-dismiss="modal">Close</button>
+				            				</div>
+				            			</div>
+				            		</div>
+				            	</div>
+				            </div>
+				        </div>
+				        <div class="mt-4">
+				        	<textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
+<button class="btn btn-primary" data-toggle="modal" data-target="#thirdModal">Launch Model</button>
+<div class="modal fade" id="thirdModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Hello World</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+			</div>
+		<div class="modal-body">
+			<p>{long text}</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div>
+	</div>
+</div>
+				        	</textarea>
+				        	
+				        </div>
+		        	</article>
+		        	<article class="mt-4">
+		        		<div>
+				            <h2 class="text-info">Popover and Tooltip</h2>
+				            <p class="text-info">Tooltips and popovers can be placed within modals as needed. When modals are closed, any tooltips and popovers within are also automatically dismissed.</p>
+				            <div class="mt-4">
+				            	<button class="btn btn-info" data-toggle="modal" data-target="#fourthModal">Launch Model</button>
+				            	<div class="modal fade" id="fourthModal">
+				            		<div class="modal-dialog">
+				            			<div class="modal-content">
+				            				<div class="modal-header">
+				            					<h4 class="modal-title">Hello World</h4>
+				            					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				            						<span aria-hidden="true">&times;</span>
+				            					</button>
+				            				</div>
+				            				<div class="modal-body">
+				            					<h5>Popover</h5>
+												<a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content">Popover button</a> 								
+												<hr>
+				            					<h5>Tooltips</h5>
+				            					<a href="#" class="tooltip-test" title="Tooltip">Tooltip link</a>
+				            				</div>
+				            				<div class="modal-footer">
+				            					<button class="btn btn-danger" data-dismiss="modal">Close</button>
+				            				</div>
+				            			</div>
+				            		</div>
+				            	</div>
+				            </div>
+				        </div>
+				        <div class="mt-4">
+				        	<textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
+<button class="btn btn-info" data-toggle="modal" data-target="#fourthModal">Launch Model</button>
+<div class="modal fade" id="fourthModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Hello World</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h5>Popover</h5>
+				<a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content">Popover button</a> 								
+				<hr>
+				<h5>Tooltips</h5>
+				<a href="#" class="tooltip-test" title="Tooltip">Tooltip link</a>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>			        		
+				        	</textarea>
+				        </div>
+		        	</article>
+		        	<article class="mt-4">
+		        		<div>
+		        			<h2 class="text-info">Using the grid</h2>
+		        			<p class="text-info">Utilize the Bootstrap grid system within a modal by nesting .container-fluid within the .modal-body. Then, use the normal grid system classes as you would anywhere else.</p>
+		        			<div class="mt-4">
+		        				<button class="btn btn-info" data-toggle="modal" data-target="#fifthModal">Launch Model</button>
+				            	<div class="modal fade" id="fifthModal">
+				            		<div class="modal-dialog">
+				            			<div class="modal-content">
+				            				<div class="modal-header">
+				            					<h4 class="modal-title">Hello World</h4>
+				            					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				            						<span aria-hidden="true">&times;</span>
+				            					</button>
+				            				</div>
+				            				<div class="modal-body">
+				            					<div class="container-fluid">
+				            						<div class="row">
+				            							<div style="background-color: rgba(86,61,124,.15);" class="col-md-4">.col-md-4</div>
+				            							<div style="background-color: rgba(86,61,124,.15);"  class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+				            						</div>
+				            						<div class="row">
+				            							<div style="background-color: rgba(86,61,124,.15);"  class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
+				            							<div style="background-color: rgba(86,61,124,.15);"  class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+				            						</div>
+				            						<div class="row">
+				            							<div style="background-color: rgba(86,61,124,.15);"  class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+				            						</div>
+				            						<div class="row">
+				            							<div style="background-color: rgba(86,61,124,.15);"  class="col-sm-9">
+				            								Level 1: .col-sm-9
+				            								<div class="row">
+				            									<div style="background-color: rgba(86,61,124,.15);"  class="col-8 col-sm-6">
+				            										Level 2: .col-8 .col-sm-6
+				            									</div>
+				            									<div style="background-color: rgba(86,61,124,.15);"  class="col-4 col-sm-6">
+				            										Level 2: .col4 .col-sm-6
+				            									</div>
+				            								</div>
+				            							</div>
+				            						</div>
+				            					</div>
+				            				</div>
+				            				<div class="modal-footer">
+				            						<button class="btn btn-danger" data-dismiss="modal">Close</button>
+				            				</div>
+				            			</div>
+				            		</div>
+				            	</div>
+		        			</div>
+		        		</div>
+		        		<div class="mt-4">
+		        			<textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
+<button class="btn btn-info" data-toggle="modal" data-target="#fifthModal">Launch Model</button>
+<div class="modal fade" id="fifthModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Hello World</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+				    <div class="row">
+				        <div style="background-color: rgba(86,61,124,.15);" class="col-md-4">.col-md-4</div>
+				        <div style="background-color: rgba(86,61,124,.15);"  class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+				    </div>
+				    <div class="row">
+				        <div style="background-color: rgba(86,61,124,.15);"  class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
+				        <div style="background-color: rgba(86,61,124,.15);"  class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+				    </div>
+				    <div class="row">
+				        <div style="background-color: rgba(86,61,124,.15);"  class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+				    </div>
+				    <div class="row">
+				        <div style="background-color: rgba(86,61,124,.15);"  class="col-sm-9">
+				            Level 1: .col-sm-9
+				            <div class="row">
+				            	<div style="background-color: rgba(86,61,124,.15);"  class="col-8 col-sm-6">
+				            		Level 2: .col-8 .col-sm-6
+				            	</div>
+				            	<div style="background-color: rgba(86,61,124,.15);"  class="col-4 col-sm-6">
+				            		Level 2: .col4 .col-sm-6
+				            	</div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>		        				
+		        			</textarea>
+		        		</div>
+		        	</article>
+		        	<article class="mt-4">
+		        		<h2 class="text-info">
+		        			Varying modal content
+		        		</h2>
+		        		<p class="text-info">Have a bunch of buttons that all trigger the same modal with slightly different contents? Use event.relatedTarget and HTML data-* attributes (possibly via jQuery) to vary the contents of the modal depending on which button was clicked.</p>
+		        		<div class="mt-4">
+		        			<button class="btn btn-info" data-toggle="modal" data-target="#sixthModal" data-whatever="@example">Launch Model for @example</button>
+		        			<button class="btn btn-info" data-toggle="modal" data-target="#sixthModal" data-whatever="@other">Launch Model for @other</button>
+		        			<div class="modal fade" id="sixthModal" tabindex="-1" role="dialog" aria-labelledby="sixthModalLabel" aria-hidden="true">
+		        				<div class="modal-dialog" role="document">
+		        					<div class="modal-content">
+		        						<div class="modal-header">
+		        							<h4 class="modal-title">New Message</h4>
+		        							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        								<span aria-hidden="true">&times;</span>
+		        							</button>
+		        						</div>
+		        						<div class="modal-body">
+		        							<form>
+		        								<div class="form-group">
+		        									<label for="recipient-name" class="col-form-label">Recipient:</label>
+		        									<input type="text" class="form-control" id="recipient-name">
+		        								</div>
+		        								<div class="form-group">
+		        									<label for="message-text" class="col-form-label">Message:</label>
+		        									<textarea class="form-control" id="message-text"></textarea>
+		        								</div>
+		        							</form>
+		        						</div>
+		        						<div class="modal-footer">
+		        							<button type="button" class="btn btn-primary">Send Message</button>
+		        							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        						</div>
+		        					</div>
+		        				</div>
+		        			</div>
+		        		</div>
+		        		<div class="mt-4">
+		        			<textarea name="" id="" cols="30" rows="10" class="form-control" disabled="true">
+<button class="btn btn-info" data-toggle="modal" data-target="#sixthModal" data-whatever="@example">Launch Model for @example</button>
+<button class="btn btn-info" data-toggle="modal" data-target="#sixthModal" data-whatever="@other">Launch Model for @other</button>
+<div class="modal fade" id="sixthModal" tabindex="-1" role="dialog" aria-labelledby="sixthModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+		    <div class="modal-header">
+		        <h4 class="modal-title">New Message</h4>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        	<span aria-hidden="true">&times;</span>
+		        </button>
+		    </div>
+			<div class="modal-body">
+		    	<form>
+		        	<div class="form-group">
+		        		<label for="recipient-name" class="col-form-label">Recipient:</label>
+		        		<input type="text" class="form-control" id="recipient-name">
+		        	</div>
+		        	<div class="form-group">
+		        		<label for="message-text" class="col-form-label">Message:</label>
+		        		<textarea> type="text" class="form-control" id="message-text"></ textarea>
+		        	</div>
+		        </form>
+		    </div>
+			<div class="modal-footer">
+			    <button type="button" class="btn btn-primary">Send Message</button>
+			    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+		        			</textarea>
+		        		</div>
+		        		<div class="mt-4">
+		        			<textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
+$('#sixthModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})		        				
+		        			</textarea>
+		        		</div>
+		        	</article>
+		        	<article class="mt-4">
+		        		<h2 class="text-info">Optional Size</h2>
+		        		<p class="text-info">Modals have two optional sizes, available via modifier classes to be placed on a .modal-dialog. These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.</p>
+		        		<div class="mt-4">
+				            <button class="btn btn-info" data-toggle="modal" data-target="#longModal">Long modal</button>
+		      				<button class="btn btn-info" data-toggle="modal" data-target="#smallModal">Small Modal</button>
 
-		          <div class="footer-container">
+		        			
+		        			<!--Large Modal-->
+
+				            <div class="modal fade" id="longModal">
+				            	<div class="modal-dialog modal-lg">
+				            		<div class="modal-content">
+				            			<div class="modal-header">
+				            				<h4 class="modal-title">Long Modal</h4>
+				            					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				            						<span aria-hidden="true">&times;</span>
+				            					</button>
+				            			</div>
+				            			<div class="modal-body">
+				            				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eos eveniet facere veritatis maxime, illum temporibus molestias incidunt voluptates quibusdam.</p>
+				            			</div>
+				            			<div class="modal-footer">
+				            				<button class="btn btn-danger" data-dismiss="modal">Close</button>
+				            			</div>
+				            		</div>
+				            	</div>
+				            </div>
+
+		        			<!--Small Modal-->
+
+		        			 <div class="modal fade" id="smallModal">
+				            	<div class="modal-dialog modal-sm">
+				            		<div class="modal-content">
+				            			<div class="modal-header">
+				            				<h4 class="modal-title">Small Modal</h4>
+				            					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				            						<span aria-hidden="true">&times;</span>
+				            					</button>
+				            			</div>
+				            			<div class="modal-body">
+				            				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eos eveniet facere veritatis maxime, illum temporibus molestias incidunt voluptates quibusdam.</p>
+				            			</div>
+				            			<div class="modal-footer">
+				            				<button class="btn btn-danger" data-dismiss="modal">Close</button>
+				            			</div>
+				            		</div>
+				            	</div>
+				            </div>
+		        		</div>
+		        	</article>
+		        	<div class="mt-4">
+		        		<textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
+<button class="btn btn-info" data-toggle="modal" data-target="#longModal">Long modal</button>
+<button class="btn btn-info" data-toggle="modal" data-target="#smallModal">Small Modal</button>
+		        			
+		<!--Large Modal-->
+
+<div class="modal fade" id="longModal">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Long Modal</h4>
+				    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        <span aria-hidden="true">&times;</span>
+				    </button>
+			</div>
+			<div class="modal-body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eos eveniet facere veritatis maxime, illum temporibus molestias incidunt voluptates quibusdam.</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+		<!--Small Modal-->
+
+<div class="modal fade" id="smallModal">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Small Modal</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+				<div class="modal-body">
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eos eveniet facere veritatis maxime, illum temporibus molestias incidunt voluptates quibusdam.</p>
+				</div>
+			<div class="modal-footer">
+				<button class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+		        		</textarea>
+		        	</div>
+		    	</section>
+
+		          <div class="footer-container mt-5">
 		            <footer class="wrapper">
 		                <img class="img-fluid" style="display: block; margin: auto;" width="25%" height="auto" alt="logo de estech" src="img/ESTECH_horizontal.png">
 		            </footer>
@@ -38,5 +532,9 @@
         		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         		<script src="js/main.js"></script>
+        		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
 		</body>
 	</html>
