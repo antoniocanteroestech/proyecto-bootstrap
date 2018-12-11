@@ -25,7 +25,240 @@
     	</header>
     </div>
     <section class="container mt-5">
-    	
+    	<article class="mt-5">
+    		<header>
+    			<h2 class="text-info h1">Forms</h2>
+    			<p class="text-info">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
+    		</header>
+    		<div class="example mb-3">
+    			<p class="text-info">Bootstrap’s form controls expand on our Rebooted form styles with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.Be sure to use an appropriate type attribute on all inputs (e.g., email for email address or number for numerical information) to take advantage of newer input controls like email verification, number selection, and more.</p>
+    			<form action="#">
+    				<div class="form-group">
+    					<label for="email">Email address</label>
+    					<input type="email" class="form-control" id="email" placeholder="Enter email" aria-describedby="emailHelp">
+    					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    				</div>
+    				<div class="form-group">
+    					<label for="pass">Password</label>
+    					<input type="password" class="form-control" id="pass" placeholder="Enter password">
+    				</div>
+    				<div class="form-check">
+    					<input type="checkbox" class="form-check-input" id="check">
+    					<label for="check" class="form-check-label">Check me out</label>
+    				</div>
+    				<button type="submit" class="btn btn-info">Submit</button>
+    			</form>
+    		</div>
+    		<div class="code">
+    			<textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
+<form action="#">
+	<div class="form-group">
+		<label for="email">Email address</label>
+		<input type="email" class="form-control" id="email" placeholder="Enter email" aria-describedby="emailHelp">
+		<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+	</div>
+	<div class="form-group">
+		<label for="pass">Password</label>
+		<input type="password" class="form-control" id="pass" placeholder="Enter password">
+	</div>
+	<div class="form-check">
+		<input type="checkbox" class="form-check-input" id="check">
+		<label for="check" class="form-check-label">Check me out</label>
+	</div>
+	<button type="submit" class="btn btn-info">Submit</button>
+</form>
+				</textarea>
+    		</div>
+    	</article>
+    	<article class="mt-3">
+    		<div class="example mb-3">
+    			<h2 class="text-info">Form controls</h2>
+    			<p class="text-info">Textual form controls—like "inputs, selects, and textareas are styled with the .form-control class. Included are styles for general appearance, focus state, sizing, and more.Be sure to explore our custom forms to further style selects.</p>
+    			<form action="#">
+    				<div class="form-group">
+    					<label for="email">Email address</label>
+    					<input type="email" id="email" class="form-control" placeholder="Enter email">
+    				</div>
+    				<div class="form-group">
+    					<label for="select">Example select</label>
+    					<select name="" id="select" class="form-control">
+    						<option value="">1</option>
+    						<option value="">2</option>
+    						<option value="">3</option>
+    						<option value="">4</option>
+    						<option value="">5</option>
+    					</select>
+    				</div>
+    				<div class="form-group">
+    					<label for="selectm">Example select multiple</label>
+    					<select multiple name="" id="selectm" class="form-control">
+    						<option value="">1</option>
+    						<option value="">2</option>
+    						<option value="">3</option>
+    						<option value="">4</option>
+    						<option value="">5</option>
+    					</select>
+    				</div>
+    				<div class="form-group">
+    					<label for="textarea">Example textarea</label>
+    					<textarea class="form-control" id="textarea" rows="3"></textarea>
+    				</div>
+    			</form>
+    		</div>
+    		<div class="code mb-3">
+    			<textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
+<form action="#">
+	<div class="form-group">
+		<label for="email">Email address</label>
+		<input type="email" id="email" class="form-control" placeholder="Enter email">
+	</div>
+	<div class="form-group">
+		<label for="select">Example select</label>
+		<select name="" id="select" class="form-control">
+			<option value="">1</option>
+			<option value="">2</option>
+			<option value="">3</option>
+			<option value="">4</option>
+			<option value="">5</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label for="selectm">Example select multiple</label>
+		<select multiple name="" id="selectm" class="form-control">
+			<option value="">1</option>
+			<option value="">2</option>
+			<option value="">3</option>
+			<option value="">4</option>
+			<option value="">5</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label for="textarea">Example textarea</label>
+		<textarea class="form-control" id="textarea" rows="3"></textarea>
+	</div>
+</form>
+    			</textarea>
+    		</div>
+    		<div class="example mb-3">
+    			<p class="text-info">For file inputs, swap the .form-control for .form-control-file.</p>
+    			<form action="#">
+    				<div class="form-group">
+    					<label for="file">Example file input</label>
+    					<input type="file" class="form-control-file" id="file">
+    				</div>
+    			</form>
+    		</div>
+    		<div class="code">
+    			<textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
+<form action="#">
+	<div class="form-group">
+		<label for="file">Example file input</label>
+		<input type="file" class="form-control-file" id="file">
+	</div>
+</form>
+    			</textarea>
+    		</div>
+    	</article>
+    	<article class="mt-3">
+    		<div class="example mb-3">
+    			<h2 class="text-info">Sizing</h2>
+    			<p class="text-info">Set heights using classes like .form-control-lg and .form-control-sm.</p>
+    			<form action="#">
+    				<input type="text" class="form-control form-control-lg mb-1" placeholder=".form-control-lg">
+    				<input type="text" class="form-control mb-1" placeholder="Default input">
+    				<input type="text" class="form-control form-control-sm" placeholder=".form-control-sm">
+    			</form>
+    		</div>
+    		<div class="code">
+    			<textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
+<form action="#">
+	<input type="text" class="form-control form-control-lg mb-1" placeholder=".form-control-lg">
+	<input type="text" class="form-control mb-1" placeholder="Default input">
+	<input type="text" class="form-control form-control-sm" placeholder=".form-control-sm">
+</form>
+    			</textarea>
+    		</div>
+    	</article>
+    	<article class="mt-3">
+    		<div class="example mb-3">
+    			<h2 class="text-info">Readonly</h2>
+    			<p class="text-info">Add the readonly boolean attribute on an input to prevent modification of the input’s value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.</p>
+    			<form action="#">
+    				<input type="text" class="form-control" placeholder="Readonly input here..." readonly="true">
+    			</form>
+    		</div>
+    		<div class="code">
+    			<textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
+<form action="#">
+	<input type="text" class="form-control" placeholder="Readonly input here..." readonly="true">
+<form>
+    			</textarea>
+    		</div>
+    	</article>
+    	<article class="mt-3">
+    		<div class="example mb-3">
+    			<h2 class="text-info">Readonly plain text</h2>
+    			<p class="text-info">If you want to have input readonly elements in your form styled as plain text, use the .form-control-plaintext class to remove the default form field styling and preserve the correct margin and padding.</p>
+    			<form action="#" class="form-inline">
+    				<div class="form-group mb-2">
+    					<label for="email" class="sr-only">Email</label>
+    					<input type="text" readonly="true" class="form-control-plaintext" id="email" value="email@example.es">
+    				</div>
+    				<div class="form-group mx-sm-3 mb-2">
+    					<label for="pass" class="sr-only">Password</label>
+    					<input type="password" class="form-control" id="pass" placeholder="Password">
+    				</div>
+    				<button type="submit" class="btn btn-info">Confirm indentity</button>
+    			</form>
+    		</div>
+    		<div class="code">
+    			<textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
+<form action="#" class="form-inline">
+	<div class="form-group mb-2">
+		<label for="email" class="sr-only">Email</label>
+		<input type="text" readonly="true" class="form-control-plaintext" id="email" value="email@example.es">
+	</div>
+	<div class="form-group mx-sm-3 mb-2">
+		<label for="pass" class="sr-only">Password</label>
+		<input type="password" class="form-control" id="pass" placeholder="Password">
+	</div>
+	<button type="submit" class="btn btn-info">Confirm indentity</button>
+</form>
+				</textarea>
+    		</div>
+    	</article>
+    	<article class="mt-3">
+    		<div class="example mb-3">
+    			<h2 class="text-info">Checkboxes and radios</h2>
+    			<p class="text-info">Default checkboxes and radios are improved upon with the help of .form-check, a single class for both input types that improves the layout and behavior of their HTML elements. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.Disabled checkboxes and radios are supported, but to provide a not-allowed cursor on hover of the parent label, you’ll need to add the disabled attribute to the .form-check-input. The disabled attribute will apply a lighter color to help indicate the input’s state.Checkboxes and radios use are built to support HTML-based form validation and provide concise, accessible labels. As such, our inputs and labels are sibling elements as opposed to an input within a label. This is slightly more verbose as you must specify id and for attributes to relate the input and label.</p>
+    			<h2 class="text-info">Default</h2>
+    			<p class="text-info">By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with .form-check.</p>
+    			<form action="#">
+    				<div class="form-check">
+  						<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  						<label class="form-check-label" for="defaultCheck1">Default checkbox</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+						<label class="form-check-label" for="defaultCheck2">Disabled checkbox</label>
+					</div>
+    			</form>
+    		</div>
+    		<div class="code">
+				<textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
+<form action="#">
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+		<label class="form-check-label" for="defaultCheck1">Default checkbox</label>
+	</div>
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+		<label class="form-check-label" for="defaultCheck2">Disabled checkbox</label>
+	</div>
+</form>
+    			</textarea>
+    		</div>
+    	</article>
     </section>
     <div class="footer-container">
 		<footer class="wrapper">
