@@ -1,4 +1,3 @@
-
 $('#sixthModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var recipient = button.data('whatever') // Extract info from data-* attributes
@@ -7,5 +6,11 @@ $('#sixthModal').on('show.bs.modal', function (event) {
   var modal = $(this)
   modal.find('.modal-title').text('New message to ' + recipient)
   modal.find('.modal-body input').val(recipient)
-})
+});
+
+$("#btnShowAlert").click(function(){
+	$(".alertBox").empty();
+ 	$(".alertBox").append("<div id='myAlert' class='alert alert-warning alert-dismissible fade show' role='alert'><strong>Hey user!</strong> you can close this alert.<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>");
+});
+
 
