@@ -1,0 +1,300 @@
+<!doctype html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Responsive</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <style type="text/css">
+            .is-visible{
+                background-color: #dff0d8;
+            }
+        </style>
+
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+
+    </head>
+
+
+    <body>
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+
+            <header class="wrapper clearfix">
+
+                <h1 class="title">Descubriendo Bootstrap</h1>
+
+                <nav>
+
+                    <ul>
+
+                        <li><a href="referencias.html">Referencias</a></li>
+                        <li><a href="indice.html">Índice</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </header>
+
+        </div>
+        
+
+		<section class="container">
+            
+            <article>
+
+                <div class="text-info">
+
+                    <h1>Responsive</h1>
+                    
+                    <br>
+
+                    <h2>Definition</h2>
+                    <br>
+
+                    <div class="text-info; row">
+
+                        <br>
+
+                        <div class="col-6">
+                            <p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Also included are utility classes for toggling content when printed.</p>
+                            
+                        <br>
+
+                            <p>Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device’s presentation.</p>
+                        </div>
+
+                        <div class="col-6">
+                            <img src="img/ejemplo.jpg" height="250px">
+                        </div>
+
+                        <br>
+
+                    </div>
+                    
+
+                    <br>
+
+                    <h2>Available classes</h2>
+
+                        <br>
+
+                        <p>The <b>.hidden-*-up</b> classes hide the element when the viewport is at the given breakpoint or wider. For example, <b>.hidden-md-up</b> hides an element on medium, large, and extra-large viewports.</p>
+                        
+                        <p>The <b>.hidden-*-down</b> classes hide the element when the viewport is at the given breakpoint or smaller. For example, <b>.hidden-md-down</b> hides an element on extra-small, small, and medium viewports.</p>
+                        
+                        <p>There are no explicit “visible”/”show” responsive utility classes; you make an element visible by simply not hiding it at that breakpoint size.</p>
+                        
+                        <p>You can combine one <b>.hidden-*-up</b> class with one <b>.hidden-*-down</b> class to show an element only on a given interval of screen sizes. For example, <b>.hidden-sm-down.hidden-xl-up</b> shows the element only on medium and large viewports. Using multiple <b>.hidden-*-up</b> classes or multiple <b>.hidden-*-down</b> classes is redundant and pointless.</p>
+
+                        <p>These classes don’t attempt to accommodate less common cases where an element’s visibility can’t be expressed as a single contiguous range of viewport breakpoint sizes; you will instead need to use custom CSS in such cases.</p>
+
+                    <br><br>
+
+                    <table class="table table-bordered table-striped responsive-utilities table-responsive">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>
+                            Extra small devices
+                            <small>Portrait phones (&lt;544px)</small>
+                          </th>
+                          <th>
+                            Small devices
+                            <small>Landscape phones (&ge;544px - &lt;768px)</small>
+                          </th>
+                          <th>
+                            Medium devices
+                            <small>Tablets (&ge;768px - &lt;992px)</small>
+                          </th>
+                          <th>
+                            Large devices
+                            <small>Desktops (&ge;992px - &lt;1200px)</small>
+                          </th>
+                          <th>
+                            Extra large devices
+                            <small>Desktops (&ge;1200px)</small>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><code>.hidden-xs-down</code></th>
+                          <td>Hidden</td>
+                          <td class="is-visible">Visible</td>
+                          <td class="is-visible">Visible</td>
+                          <td class="is-visible">Visible</td>
+                          <td class="is-visible">Visible</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><code>.hidden-sm-down</code></th>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td class="is-visible">Visible</td>
+                          <td class="is-visible">Visible</td>
+                          <td class="is-visible">Visible</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><code>.hidden-md-down</code></th>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td class="is-visible">Visible</td>
+                          <td class="is-visible">Visible</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><code>.hidden-lg-down</code></th>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td class="is-visible">Visible</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><code>.hidden-xl-down</code></th>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><code>.hidden-xs-up</code></th>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><code>.hidden-sm-up</code></th>
+                          <td class="is-visible">Visible</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><code>.hidden-md-up</code></th>
+                          <td class="is-visible">Visible</td>
+                          <td class="is-visible">Visible</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><code>.hidden-lg-up</code></th>
+                          <td class="is-visible">Visible</td>
+                          <td class="is-visible">Visible</td>
+                          <td class="is-visible">Visible</td>
+                          <td>Hidden</td>
+                          <td>Hidden</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><code>.hidden-xl-up</code></th>
+                          <td class="is-visible">Visible</td>
+                          <td class="is-visible">Visible</td>
+                          <td class="is-visible">Visible</td>
+                          <td class="is-visible">Visible</td>
+                          <td>Hidden</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <br><br>
+
+                    <h2 id="responsive-utilities-print">Print classes</h2>
+                    
+                    <br>
+
+                    <p>Similar to the regular responsive classes, use these for toggling content for print.</p>
+                    
+                    <br>
+
+                    <table class="table table-bordered table-striped responsive-utilities table-responsive">
+                      <thead>
+                        <tr>
+                          <th>Class</th>
+                          <th>Browser</th>
+                          <th>Print</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th><code>.visible-print-block</code></th>
+                          <td class="is-hidden">Hidden</td>
+                          <td class="is-visible">Visible<br />(as <code>display: block</code>)</td>
+                        </tr>
+                        <tr>
+                          <th><code>.visible-print-inline</code></th>
+                          <td class="is-hidden">Hidden</td>
+                          <td class="is-visible">Visible<br />(as <code>display: inline</code>)</td>
+                        </tr>
+                        <tr>
+                          <th><code>.visible-print-inline-block</code></th>
+                          <td class="is-hidden">Hidden</td>
+                          <td class="is-visible">Visible<br />(as <code>display: inline-block</code>)</td>
+                        </tr>
+                        <tr>
+                          <th><code>.hidden-print</code></th>
+                          <td class="is-visible">Visible</td>
+                          <td class="is-hidden">Hidden</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    
+                </div>
+
+            </article>
+            
+        </section>
+
+        <br>
+
+         <div class="footer-container">
+
+            <footer class="wrapper">
+
+                <img class="img-fluid" style="display: block; margin: auto;" width="25%" height="auto" alt="logo de estech" src="img/ESTECH_horizontal.png">
+
+            </footer>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+	
+	</body>
+
+</html>

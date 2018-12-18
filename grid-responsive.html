@@ -1,0 +1,807 @@
+<!doctype html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Grid-Responsive</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+
+        <style>
+
+        .column{
+            background-color: #e6e2eb;
+            border: 1px solid;
+            border-color: #c9c1d5;
+        }
+
+        .text{
+            margin-top: 20px;
+        }
+
+        </style>
+
+    </head>
+
+
+    <body>
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+
+            <header class="wrapper clearfix">
+
+                <h1 class="title">Descubriendo Bootstrap</h1>
+
+                <nav>
+
+                    <ul>
+
+                        <li><a href="referencias.html">Referencias</a></li>
+                        <li><a href="indice.html">Índice</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </header>
+
+        </div>
+        
+
+		<section class="container text-info">
+            
+            <article>
+
+                    <h1>Grid Template</h1>
+
+
+                    <p>Bootstrap includes a powerful mobile-first flexbox grid system for building layouts of all shapes and sizes. It’s based on a 12 column layout and has multiple tiers, one for each media query range.</p>
+
+                    <br>
+
+                    <div>
+                        
+                        <h1>How it works</h1>
+
+                        <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
+
+                        <br>
+
+                        <div class="row ">
+                            <div class="col-4 column">
+                                <p class="text">One of three columns</p>
+                            </div>
+                            <div class="col-4 column">
+                                <p class="text">One of three columns</p>
+                            </div>
+                            <div class="col-4 column">
+
+                                <p class="text">One of three columns</p>
+
+                            </div>
+                        </div>
+
+                        <br><br>
+
+                        <p>The above example creates three equal-width columns on small, medium, large, and extra large devices using our predefined grid classes. Those columns are centered in the page with the parent .container.</p>
+
+                        <p> Breaking it down, here’s how it works: </p>
+                        
+                        <ul>
+                          <li>Containers provide a means to center your site’s contents. Use .container for fixed width or .container-fluid for full width.</li>
+                          <li>Rows are horizontal groups of columns that ensure your columns are lined up properly. We use the negative margin method on .row to ensure all your content is aligned properly down the left side.</li>
+                          <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+                          <li>Thanks to flexbox, grid columns without a set width will automatically layout with equal widths. For example, four instances of .col-sm will each automatically be 25% wide for small breakpoints.</li>
+                          <li>Column classes indicate the number of columns you’d like to use out of the possible 12 per row. So, if you want three equal-width columns, you can use .col-sm-4.</li>
+                          <li>Column widths are set in percentages, so they’re always fluid and sized relative to their parent element.</li>
+                          <li>Columns have horizontal padding to create the gutters between individual columns, however, you can remove the margin from rows and padding from columns with .no-gutters on the .row.</li>
+                          <li>There are five grid tiers, one for each responsive breakpoint: all breakpoints (extra small), small, medium, large, and extra large.</li>
+                          <li>Grid tiers are based on minimum widths, meaning they apply to that one tier and all those above it (e.g., .col-sm-4 applies to small, medium, large, and extra large devices).</li>
+                          <li>You can use predefined grid classes or Sass mixins for more semantic markup.</li>
+                        </ul>
+                            
+                        <br>
+
+                        <p>Be aware of the limitations and bugs around flexbox, like the inability to use some HTML elements as flex containers.</p>
+
+                    </div>  
+
+            </article>
+
+            <br>
+
+            <article>
+                
+                <h1>Auto-layouts columns</h1>
+
+                <p></p>
+
+                <h3>Equal-width</h3>
+                
+                <div>
+                    
+                    <p>For example, here are two grid layouts that apply to every device and viewport, from xs to xl.</p>
+
+
+                  <div class="row"> 
+                    <div class="col column">
+                      <p class="text">1 of 2</p>
+                    </div>
+                    <div class="col column">
+                      <p class="text">1 of 2</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col column">
+                      <p class="text">1 of 3</p>
+                    </div>
+                    <div class="col column">
+                     <p class="text">1 of 3</p>
+                    </div>
+                    <div class="col column">
+                      <p class="text">1 of 3</p>
+                    </div>
+                  </div>
+
+                  <br>
+
+                    <code>
+                    <textarea class="form-control" rows="22" readonly="true">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 2
+    </div>
+    <div class="col">
+      1 of 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      1 of 3
+    </div>
+  </div>
+</div>
+                    </textarea>
+                </code>
+
+                </div>
+                
+                <br>
+
+                <h3>Setting one column width</h3>
+
+                <br>
+
+                <div>
+                    <p>Auto-layout for flexbox grid columns also means you can set the width of one column and the others will automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.</p>
+
+                    
+                      <div class="row">
+                        <div class="col column">
+                          <p class="text">1 of 3</p>
+                        </div>
+                        <div class="col-6 column">
+                          <p class="text">2 of 3 (wider)</p>
+                        </div>
+                        <div class="col column">
+                          <p class="text">3 of 3</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col column">
+                          <p class="text">1 of 3</p>
+                        </div>
+                        <div class="col-5 column">
+                          <p class="text">2 of 3 (wider)</p>
+                        </div>
+                        <div class="col column">
+                          <p class="text">3 of 3</p>
+                        </div>
+                      </div>
+
+                        <code>
+                    <textarea class="form-control" rows="25" readonly="true">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-6">
+      2 of 3 (wider)
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-5">
+      2 of 3 (wider)
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
+                    </textarea>
+                </code>
+
+                </div>
+
+                <br>
+
+                <h3>Variable width content</h3>
+
+                <br>
+                
+                <div>
+                    
+                    <p>Using the col-{breakpoint}-auto classes, columns can size itself based on the natural width of its content. This is super handy with single line content like inputs, numbers, etc. This, in conjunction with horizontal alignment classes, is very useful for centering layouts with uneven column sizes as viewport width changes.</p>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col col-lg-2 column">
+                          <p class="text">1 of 3</p>
+                        </div>
+                        <div class="col-12 col-md-auto column">
+                          <p class="text">Variable width content</p>
+                        </div>
+                        <div class="col col-lg-2 column">
+                          <p class="text">3 of 3</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col column">
+                          <p class="text">1 of 3</p>
+                        </div>
+                        <div class="col-12 col-md-auto column">
+                          <p class="text">Variable width content</p>
+                        </div>
+                        <div class="col col-lg-2 column">
+                          <p class="text">3 of 3</p>
+                        </div>
+                      </div>
+
+                    <code>
+                        <textarea class="form-control" rows="25" readonly="true">
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-2">
+      1 of 3
+    </div>
+    <div class="col-12 col-md-auto">
+      Variable width content
+    </div>
+    <div class="col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-12 col-md-auto">
+      Variable width content
+    </div>
+    <div class="col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+</div>
+                        </textarea>
+                    </code>
+
+                </div>
+
+                <br>
+
+                <h3>Equal-width multi-row</h3>
+
+                <div>
+                    
+                    <p>Create equal-width columns that span multiple rows by inserting a .w-100 where you want the columns to break to a new line. Make the breaks responsive by mixing the .w-100 with some responsive display utilities.</p>
+
+                    <br>
+
+                    <div class="row">
+                      <div class="col column"> <p class="text">col</p> </div>
+                      <div class="col column"> <p class="text">col</p> </div>
+                      <div class="w-100"></div>
+                      <div class="col column"> <p class="text">col</p> </div>
+                      <div class="col column"> <p class="text">col</p> </div>
+                    </div>
+
+                                        <code>
+                        <textarea class="form-control" rows="8" readonly="true">
+<div class="row">
+  <div class="col">col</div>
+  <div class="col">col</div>
+  <div class="w-100"></div>
+  <div class="col">col</div>
+  <div class="col">col</div>
+</div>
+                        </textarea>
+                    </code>
+
+                </div>
+
+            </article>
+
+            <br>
+
+            <article>
+                
+                <h1>Responsive classes</h1>
+
+                <p>Bootstrap’s grid includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.</p>
+
+                <br>
+
+                <h3>Five grid tiers</h3>
+                
+                <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden.</p>
+
+                <br>
+
+                   <div class="row">
+                        <div class="col-4 column"><p class="text">.col-4</p></div>
+                        <div class="col-4 column"><p class="text">.col-4</p></div>
+                        <div class="col-4 column"><p class="text">.col-4</p></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-4 column"><p class="text">.col-sm-4</p></div>
+                        <div class="col-sm-4 column"><p class="text">.col-sm-4</p></div>
+                        <div class="col-sm-4 column"><p class="text">.col-sm-4</p></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-4 column"><p class="text">.col-md-4</p></div>
+                        <div class="col-md-4 column"><p class="text">.col-md-4</p></div>
+                        <div class="col-md-4 column"><p class="text">.col-md-4</p></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-4 column"><p class="text">.col-lg-4</p></div>
+                        <div class="col-lg-4 column"><p class="text">.col-lg-4</p></div>
+                        <div class="col-lg-4 column"><p class="text">.col-lg-4</p></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-xl-4 column"><p class="text">.col-xl-4</p></div>
+                        <div class="col-xl-4 column"><p class="text">.col-xl-4</p></div>
+                        <div class="col-xl-4 column"><p class="text">.col-xl-4</p></div>
+                    </div>
+
+                    <br>
+                    
+                    <code>
+                        <textarea class="form-control" rows="30" readonly="true">
+<div class="row">
+    <div class="col-4">.col-4</div>
+    <div class="col-4">.col-4</div>
+    <div class="col-4">.col-4</div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">.col-sm-4</div>
+    <div class="col-sm-4">.col-sm-4</div>
+    <div class="col-sm-4">.col-sm-4</div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4">.col-lg-4</div>
+    <div class="col-lg-4">.col-lg-4</div>
+    <div class="col-lg-4">.col-lg-4</div>
+  </div>
+
+  <div class="row">
+    <div class="col-xl-4">.col-xl-4</div>
+    <div class="col-xl-4">.col-xl-4</div>
+    <div class="col-xl-4">.col-xl-4</div>
+</div>
+                        </textarea>
+                    </code>
+
+                    <br>
+
+                    <p>Don’t want your columns to simply stack in some grid tiers? Use a combination of different classes for each tier as needed.</p>
+
+            </article>
+
+            <br>
+
+            <article>
+                
+                <h1>Alignment</h1>
+
+                <p>Use flexbox alignment utilities to vertically and horizontally align columns.</p>
+
+                <h3>Vertical alignment</h3>
+
+                <br>
+                  <div class="row align-items-start">
+                    <div class="col column">
+                      <p>One of three columns</p>
+                    </div>
+                    <div class="col column">
+                      <p>One of three columns</p>
+                    </div>
+                    <div class="col column">
+                      <p>One of three columns</p>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col column">
+                      <p>One of three columns</p>
+                    </div>
+                    <div class="col column">
+                      <p>One of three columns</p>
+                    </div>
+                    <div class="col column">
+                      <p>One of three columns</p>
+                    </div>
+                  </div>
+                  <div class="row align-items-end">
+                    <div class="col column">
+                      <p>One of three columns</p>
+                    </div>
+                    <div class="col column">
+                      <p>One of three columns</p>
+                    </div>
+                    <div class="col column">
+                      <p>One of three columns</p>
+                    </div>
+                  </div>
+                <br>
+
+                    <code>
+                        <textarea class="form-control" rows="36" readonly="true">
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+  </div>
+  <div class="row align-items-end">
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+  </div>
+</div>
+                        </textarea>
+                    </code>
+
+                    <br>
+
+                    <div class="container">
+                      <div class="row" style="text-align: start">
+                        <div class="col align-self-start column">
+                         <p class="text"> One of three columns</p>
+                        </div>
+                    </div>
+                    <div class="row" style="text-align: center;">
+                        <div class="col align-self-center column">
+                          <p class="text">One of three columns</p>
+                        </div>
+                    </div>
+                    <div class="row" style="text-align: end">
+                        <div class="col align-self-end column">
+                          <p class="text">One of three columns</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <code>
+                        <textarea class="form-control" rows="14" readonly="true">
+<div class="container">
+  <div class="row">
+    <div class="col align-self-start">
+      One of three columns
+    </div>
+    <div class="col align-self-center">
+      One of three columns
+    </div>
+    <div class="col align-self-end">
+      One of three columns
+    </div>
+  </div>
+</div>
+                        </textarea>
+                    </code>
+
+                <br><br>
+
+                <h3>Horizontal alignment</h3>
+
+                <br>
+                <div class="row justify-content-start">
+                    <div class="col-4 column">
+                      <p class="text">One of two columns</p>
+                    </div>
+                    <div class="col-4 column">
+                      <p class="text">One of two columns</p>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-4 column">
+                      <p class="text">One of two columns</p>
+                    </div>
+                    <div class="col-4 column">
+                      <p class="text">One of two columns</p>
+                    </div>
+                  </div>
+                  <div class="row justify-content-end">
+                    <div class="col-4 column">
+                      <p class="text">One of two columns</p>
+                    </div>
+                    <div class="col-4 column">
+                      <p class="text">One of two columns</p>
+                    </div>
+                  </div>
+                  <div class="row justify-content-around">
+                    <div class="col-4 column">
+                      <p class="text">One of two columns</p>
+                    </div>
+                    <div class="col-4 column">
+                      <p class="text">One of two columns</p>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between">
+                    <div class="col-4 column">
+                      <p class="text">One of two columns</p>
+                    </div>
+                    <div class="col-4 column">
+                      <p class="text">One of two columns</p>
+                    </div>
+                  </div>
+
+                  <br>
+
+                    <code>
+                        <textarea class="form-control" rows="43" readonly="true">
+<div class="container">
+  <div class="row justify-content-start">
+    <div class="col-4">
+      One of two columns
+    </div>
+    <div class="col-4">
+      One of two columns
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-4">
+      One of two columns
+    </div>
+    <div class="col-4">
+      One of two columns
+    </div>
+  </div>
+  <div class="row justify-content-end">
+    <div class="col-4">
+      One of two columns
+    </div>
+    <div class="col-4">
+      One of two columns
+    </div>
+  </div>
+  <div class="row justify-content-around">
+    <div class="col-4">
+      One of two columns
+    </div>
+    <div class="col-4">
+      One of two columns
+    </div>
+  </div>
+  <div class="row justify-content-between">
+    <div class="col-4">
+      One of two columns
+    </div>
+    <div class="col-4">
+      One of two columns
+    </div>
+  </div>
+</div>
+                        </textarea>
+                    </code>
+
+            </article>
+
+            <br>
+
+            <article>
+                
+                <h1>Reordering</h1>
+
+                <br>
+
+                <h3>Flex order</h3>
+
+                <p>Use flexbox utilities for controlling the visual order of your content.</p>
+
+                <br>
+
+                  <div class="row">
+                    <div class="col flex-unordered column">
+                      <p class="text">First, but unordered</p>
+                    </div>
+                    <div class="col flex-last column">
+                      <p class="text">Second, but last</p>
+                    </div>
+                    <div class="col flex-first column">
+                      <p class="text">Third, but first</p>
+                    </div>
+                  </div>
+
+                  <br>
+
+                  <code>
+                        <textarea class="form-control" rows="14" readonly="true">
+<div class="container">
+  <div class="row">
+    <div class="col flex-unordered">
+      First, but unordered
+    </div>
+    <div class="col flex-last">
+      Second, but last
+    </div>
+    <div class="col flex-first">
+      Third, but first
+    </div>
+  </div>
+</div>
+                        </textarea>
+                    </code>
+
+                    <br><br>
+
+                    <h3>Offsetting columns</h3>
+
+                    <p>Move columns to the right using .offset-md-* classes. These classes increase the left margin of a column by * columns. For example, .offset-md-4 moves .col-md-4 over four columns.</p>
+                    
+                    <br>
+
+                    <div class="row">
+                      <div class="col-md-4 column"><p class="text">.col-md-4</p></div>
+                      <div class="col-md-4 offset-md-4 column"><p class="text">.col-md-4 .offset-md-4</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 offset-md-3 column"><p class="text">.col-md-3 .offset-md-3</p></div>
+                      <div class="col-md-3 offset-md-3 column"><p class="text">.col-md-3 .offset-md-3</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 offset-md-3 column"><p class="text">.col-md-6 .offset-md-3</p></div>
+                    </div>
+
+                    <br>
+
+                    <code>
+                        <textarea class="form-control" rows="12" readonly="true">
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+  <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+</div>
+<div class="row">
+  <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+</div>
+                        </textarea>
+                    </code>
+
+                    <br>
+
+                    <h3>Push and pull</h3>
+
+                    <p>Easily change the order of our built-in grid columns with .push-md-* and .pull-md-* modifier classes.</p>
+
+                    <br>
+
+                    <div class="row">
+                      <div class="col-md-9 push-md-3 column"><p class="text">.col-md-9 .push-md-3</p></div>
+                      <div class="col-md-3 pull-md-9 column"><p class="text">.col-md-3 .pull-md-9</p></div>
+                    </div>
+
+                    <br>
+
+                    <code>
+                        <textarea class="form-control" rows="5" readonly="true">
+<div class="row">
+  <div class="col-md-9 push-md-3">.col-md-9 .push-md-3</div>
+  <div class="col-md-3 pull-md-9">.col-md-3 .pull-md-9</div>
+</div>
+                        </textarea>
+                    </code>
+
+
+
+            </article>
+            
+        </section>
+
+        <br><br>
+
+         <div class="footer-container">
+
+            <footer class="wrapper">
+
+                <img class="img-fluid" style="display: block; margin: auto;" width="25%" height="auto" alt="logo de estech" src="img/ESTECH_horizontal.png">
+
+            </footer>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+	
+	</body>
+
+</html>
