@@ -3,7 +3,7 @@
     <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Lists</title>
+        <title>List group</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -26,166 +26,614 @@
             </div>
 
             <section class="container mt-5">
-              <h2 class="h1 text-info">Lists</h2>
+              <h2 class="h1 text-info">List group</h2>
               <p class="text-info">
-                Badges are used to highlight new or unread elements.
+                List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.
               </p>
               <article class="mt-5">
                 <div>
-                  <h2 class="text-info">Example</h2>
-                  <p class="text-info">Badges scale to match the size of the immediate parent element by using relative font sizing and em units.</p>
+                  <h2 class="text-info">Basic example</h2>
+                  <p class="text-info">The most basic list group is an unordered list with list items and the proper classes. Build upon it with the options that follow, or with your own CSS as needed.</p>
                     <div class="mt-4">
-                      <h1>Example heading <span class="badge badge-secondary">New</span></h1>
-                      <h2>Example heading <span class="badge badge-secondary">New</span></h2>
-                      <h3>Example heading <span class="badge badge-secondary">New</span></h3>
-                      <h4>Example heading <span class="badge badge-secondary">New</span></h4>
-                      <h5>Example heading <span class="badge badge-secondary">New</span></h5>
-                      <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+                      <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
                 </div>
                   <div class="mt-3">
                     <textarea name="" id="" cols="30" rows="7" disabled="true" class="form-control">
-<h1>Example heading <span class="badge badge-secondary">New</span></h1>
-<h2>Example heading <span class="badge badge-secondary">New</span></h2>
-<h3>Example heading <span class="badge badge-secondary">New</span></h3>
-<h4>Example heading <span class="badge badge-secondary">New</span></h4>
-<h5>Example heading <span class="badge badge-secondary">New</span></h5>
-<h6>Example heading <span class="badge badge-secondary">New</span></h6>
+<ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
                     </textarea>
                   </div>
               </article>
+             
+      
+                
               <article class="mt-4">
                 <div>
-                    <p class="text-info">Badges can be used as part of links or buttons to provide a counter.</p>
-                    <div class="mt-4">
-                      <button type="button" class="btn btn-primary">
-                        Notifications <span class="badge badge-light">4</span>
-                      </button>
+                  <h2 class="text-info">Active items</h2>
+                  <p class="text-info">Add <code>.active</code> to a <code>.list-group-item</code> to indicate the current active selection.</p>
+                  <div class="mt-4">
+                    <ul class="list-group">
+                      <li class="list-group-item active">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Morbi leo risus</li>
+                      <li class="list-group-item">Porta ac consectetur ac</li>
+                      <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="mt-3">
-                  <textarea name="" id="" cols="30" rows="4" disabled="true" class="form-control">
-<button type="button" class="btn btn-primary">
-  Notifications <span class="badge badge-light">4</span>
-</button>
-                  </textarea>
-                </div>
+                  <div class="mt-3">
+
+                    <textarea name="" id="" cols="30" rows="7" disabled="true" class="form-control">
+<ul class="list-group">
+  <li class="list-group-item active">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+                    </textarea>
+                    
+                  </div>
               </article>
+
+                    <article class="mt-4">
+                <div>
+                  <h2 class="text-info">Disabled items</h2>
+                  <p class="text-info">Add <code>.disabled</code> to a <code>.list-group-item</code> to make it appear disabled. Note that some elements with <code>.disabled</code> will also require custom JavaScript to fully disable their click events (e.g., links).</p>
+                  <div class="mt-4">
+                    <ul class="list-group">
+                      <li class="list-group-item disabled">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Morbi leo risus</li>
+                      <li class="list-group-item">Porta ac consectetur ac</li>
+                      <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                  </div>
+                </div>
+                  <div class="mt-3">
+                     <textarea name="" id="" cols="30" rows="7" disabled="true" class="form-control">
+<ul class="list-group">
+  <li class="list-group-item disabled">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+                    </textarea>
+                    
+                  </div>
+              </article>
+
               <article class="mt-4">
                 <div>
-                     <p class="text-info">Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies. While the styling of badges provides a visual cue as to their purpose, these users will simply be presented with the content of the badge. Depending on the specific situation, these badges may seem like random additional words or numbers at the end of a sentence, link, or button. Unless the context is clear (as with the “Notifications” example, where it is understood that the “4” is the number of notifications), consider including additional context with a visually hidden piece of additional text.</p>
+                  <h2 class="text-info">Links and buttons</h2>
+                  <p class="text-info">Use <code>&lt;a&gt;</code>s or <code>&lt;button&gt;</code>s to create actionable list group items with hover, disabled, and active states by adding .list-group-item-action. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like <code>&lt;li&gt;</code>s or <code>&lt;div&gt;</code>s) don’t provide a click or tap affordance.
+
+                  Be sure to not use the standard <code>.btn</code> classes here:</p>
+
+                  <div class="mt-4">
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action active">
+                        Cras justo odio
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                      <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                      <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                      <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+                    </div>
+                  </div>
+                </div>
+                  <div class="mt-3">
+                     <textarea name="" id="" cols="30" rows="7" disabled="true" class="form-control">
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active">
+    Cras justo odio
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+  <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+</div>
+                    </textarea>
+
+                    <br>
+                     <p class="text-info">With <code>&lt;button&gt;</code>s, you can also make use of the <code>disabled</code> attribute instead of the <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s don’t support the disabled attribute.</p>
+                  
+                  <div class="mt-4">
+                   <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action active">
+                      Cras justo odio
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+                    <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+                    <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
+                    <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+                  </div>
+                  </div>
+                </div>
+                  <div class="mt-3">
+                     <textarea name="" id="" cols="30" rows="7" disabled="true" class="form-control">
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Cras justo odio
+  </button>
+  <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+  <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+  <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
+  <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+</div>
+                    </textarea>
+                    
+                  </div>
+              </article>
+
+
+              <article class="mt-4">
+                <div>
+                  <h2 class="text-info">Flush</h2>
+                  <p class="text-info">Add <code>.list-group-flush</code> to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
+                  <div class="mt-4">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Morbi leo risus</li>
+                      <li class="list-group-item">Porta ac consectetur ac</li>
+                      <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                  </div>
+                </div>
+                  <div class="mt-3">
+                     <textarea name="" id="" cols="30" rows="7" disabled="true" class="form-control">
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+                    </textarea>
+                    
+                  </div>
+              </article>
+
+                      <article class="mt-4">
+                <div>
+                  <h2 class="text-info">Contextual classes</h2>
+                  <p class="text-info">Use contextual classes to style list items with a stateful background and color.</p>
+                  <div class="mt-4">
+                    <ul class="list-group">
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+
+
+                      <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
+                      <li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
+                      <li class="list-group-item list-group-item-success">This is a success list group item</li>
+                      <li class="list-group-item list-group-item-danger">This is a danger list group item</li>
+                      <li class="list-group-item list-group-item-warning">This is a warning list group item</li>
+                      <li class="list-group-item list-group-item-info">This is a info list group item</li>
+                      <li class="list-group-item list-group-item-light">This is a light list group item</li>
+                      <li class="list-group-item list-group-item-dark">This is a dark list group item</li>
+                    </ul>
+                  </div>
+                </div>
+                  <div class="mt-3">
+                     <textarea name="" id="" cols="30" rows="7" disabled="true" class="form-control">
+<ul class="list-group">
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+
+  
+  <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
+  <li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
+  <li class="list-group-item list-group-item-success">This is a success list group item</li>
+  <li class="list-group-item list-group-item-danger">This is a danger list group item</li>
+  <li class="list-group-item list-group-item-warning">This is a warning list group item</li>
+  <li class="list-group-item list-group-item-info">This is a info list group item</li>
+  <li class="list-group-item list-group-item-light">This is a light list group item</li>
+  <li class="list-group-item list-group-item-dark">This is a dark list group item</li>
+</ul>
+                    </textarea>
+
+                    <br>
+
+                    <p class="text-info">Contextual classes also work with <code>.list-group-item-action</code>. Note the addition of the hover styles here not present in the previous example. Also supported is the <code>.active</code> state; apply it to indicate an active selection on a contextual list group item.</p>
+
                     <div class="mt-4">
                     
-                    <button type="button" class="btn btn-primary">
-                       Profile <span class="badge badge-light">9</span>
-                         <span class="sr-only">unread messages</span>
-                    </button>
+                      <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
 
-                    </div>
-                </div>
 
-                <div class="mt-4">
-                  <textarea name="" id="" cols="30" rows="5" disabled="true" class="form-control">
-<button type="button" class="btn btn-primary">
-Profile <span class="badge badge-light">9</span>
-<span class="sr-only">unread messages</span>
-</button>
-                  </textarea>
-                  
-                </div>
-              </article>
-              <article class="mt-4">
-                <div>
-                    <h2 class="text-info">Contextual variations</h2>
-                    <p class="text-info">Add any of the below mentioned modifier classes to change the appearance of a badge.</p>
-                    <div class="mt-4">
-                      <span class="badge badge-primary">Primary</span>
-                      <span class="badge badge-secondary">Secondary</span>
-                      <span class="badge badge-success">Success</span>
-                      <span class="badge badge-danger">Danger</span>
-                      <span class="badge badge-warning">Warning</span>
-                      <span class="badge badge-info">Info</span>
-                      <span class="badge badge-light">Light</span>
-                      <span class="badge badge-dark">Dark</span>
-                    </div>
-                </div>
-                <div class="mt-4">
-                  <textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
-<span class="badge badge-primary">Primary</span>
-<span class="badge badge-secondary">Secondary</span>
-<span class="badge badge-success">Success</span>
-<span class="badge badge-danger">Danger</span>
-<span class="badge badge-warning">Warning</span>
-<span class="badge badge-info">Info</span>
-<span class="badge badge-light">Light</span>
-<span class="badge badge-dark">Dark</span>     
-                  </textarea>
-                </div>
-              </article>
-              <article class="mt-4">
-                <div>
-                  
-                  <p class="text-info">
-                    Conveying meaning to assistive technologies
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">This is a primary list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">This is a secondary list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">This is a success list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">This is a danger list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-warning">This is a warning list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-info">This is a info list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-light">This is a light list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">This is a dark list group item</a>
+                      </div>
 
-                    Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the .sr-only class.
-                  </p>
-                
+                  </div>
                 </div>
+                  <div class="mt-3">
+                     <textarea name="" id="" cols="30" rows="7" disabled="true" class="form-control">
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+
+  
+  <a href="#" class="list-group-item list-group-item-action list-group-item-primary">This is a primary list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">This is a secondary list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-success">This is a success list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-danger">This is a danger list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-warning">This is a warning list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-info">This is a info list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-light">This is a light list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">This is a dark list group item</a>
+</div>
+                    </textarea>
+
+                  <br>
+                  <h3 class="text-info">Conveying meaning to assistive technologies</h3>
+                  <p class="text-info">Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the <code>.sr-only class</code>.</p>
+                    
+                  </div>
               </article>
+
               <article class="mt-4">
-                <h2 class="text-info">Pill badges</h2>
-                <p class="text-info">HUse the .badge-pill modifier class to make badges more rounded (with a larger border-radius and additional horizontal padding). Useful if you miss the badges from v3.</p>
+                <h2 class="text-info">With badges</h2>
+                <p class="text-info">Add badges to any list group item to show unread counts, activity, and more with the help of some <a href="https://getbootstrap.com/docs/4.0/utilities/flex/" target="_blank">utilities.</a></p>
                 <div class="mt-4">
-                  <span class="badge badge-pill badge-primary">Primary</span>
-                  <span class="badge badge-pill badge-secondary">Secondary</span>
-                  <span class="badge badge-pill badge-success">Success</span>
-                  <span class="badge badge-pill badge-danger">Danger</span>
-                  <span class="badge badge-pill badge-warning">Warning</span>
-                  <span class="badge badge-pill badge-info">Info</span>
-                  <span class="badge badge-pill badge-light">Light</span>
-                  <span class="badge badge-pill badge-dark">Dark</span>
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Cras justo odio
+                      <span class="badge badge-primary badge-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Dapibus ac facilisis in
+                      <span class="badge badge-primary badge-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Morbi leo risus
+                      <span class="badge badge-primary badge-pill">1</span>
+                    </li>
+                  </ul>
                   </div>
                 </div>
                 <div class="mt-4">
                   <textarea name="" id="" cols="30" rows="10" class="form-control" disabled="true">
-<span class="badge badge-pill badge-primary">Primary</span>
-<span class="badge badge-pill badge-secondary">Secondary</span>
-<span class="badge badge-pill badge-success">Success</span>
-<span class="badge badge-pill badge-danger">Danger</span>
-<span class="badge badge-pill badge-warning">Warning</span>
-<span class="badge badge-pill badge-info">Info</span>
-<span class="badge badge-pill badge-light">Light</span>
-<span class="badge badge-pill badge-dark">Dark</span>
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Cras justo odio
+    <span class="badge badge-primary badge-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Dapibus ac facilisis in
+    <span class="badge badge-primary badge-pill">2</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Morbi leo risus
+    <span class="badge badge-primary badge-pill">1</span>
+  </li>
+</ul>
                   </textarea>
                 </div>
               </article>
-                
-              <article class="mt-4">
-                <div>
-                  <h2 class="text-info">Links</h2>
-                  <p class="text-info">Using the contextual .badge-* classes on an <a> element quickly provide actionable badges with hover and focus states.</p>
-                    <div class="mt-4">
-                      <a href="#" class="badge badge-primary">Primary</a>
-                      <a href="#" class="badge badge-secondary">Secondary</a>
-                      <a href="#" class="badge badge-success">Success</a>
-                      <a href="#" class="badge badge-danger">Danger</a>
-                      <a href="#" class="badge badge-warning">Warning</a>
-                      <a href="#" class="badge badge-info">Info</a>
-                      <a href="#" class="badge badge-light">Light</a>
-                      <a href="#" class="badge badge-dark">Dark</a>
-                                          </div>
-                </div>
-                  <div class="mt-3">
-                    <textarea name="" id="" cols="30" rows="10" disabled="true" class="form-control">
-<a href="#" class="badge badge-primary">Primary</a>
-<a href="#" class="badge badge-secondary">Secondary</a>
-<a href="#" class="badge badge-success">Success</a>
-<a href="#" class="badge badge-danger">Danger</a>
-<a href="#" class="badge badge-warning">Warning</a>
-<a href="#" class="badge badge-info">Info</a>
-<a href="#" class="badge badge-light">Light</a>
-<a href="#" class="badge badge-dark">Dark</a>
-                    </textarea>
+
+                        <article class="mt-4">
+                <h2 class="text-info">Custom content</h2>
+                <p class="text-info">Add nearly any HTML within, even for linked list groups like the one below, with the help of  <a href="https://getbootstrap.com/docs/4.0/utilities/flex/" target="_blank">flexbox utilities.</a></p>
+                <div class="mt-4">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small>3 days ago</small>
+                      </div>
+                      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                      <small>Donec id elit non mi porta.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-muted">3 days ago</small>
+                      </div>
+                      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                      <small class="text-muted">Donec id elit non mi porta.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-muted">3 days ago</small>
+                      </div>
+                      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                      <small class="text-muted">Donec id elit non mi porta.</small>
+                    </a>
                   </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <textarea name="" id="" cols="30" rows="10" class="form-control" disabled="true">
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small>3 days ago</small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small>Donec id elit non mi porta.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small class="text-muted">Donec id elit non mi porta.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small class="text-muted">Donec id elit non mi porta.</small>
+  </a>
+</div>
+                  </textarea>
+                </div>
+              </article>
+
+                         <article class="mt-4">
+                <h2 class="text-info">JavaScript behavior</h2>
+                <p class="text-info">Use the tab JavaScript plugin—include it individually or through the compiled bootstrap.js file—to extend our list group to create tabbable panes of local content.</p>
+                <div class="mt-4">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">You are viewing the <b>Home</b> tab of the list</div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">You are viewing the <b>Profile</b> tab of the list...</div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">You are viewing the <b>Messages</b> tab of the list...</div>
+                         <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">You are viewing the <b>Settings</b> tab of the list...</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <textarea name="" id="" cols="30" rows="10" class="form-control" disabled="true">
+<div class="row">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">You are viewing the <b>Home</b> tab of the list</div>
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">You are viewing the <b>Profile</b> tab of the list...</div>
+      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">You are viewing the <b>Messages</b> tab of the list...</div>
+      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">You are viewing the <b>Settings</b> tab of the list...</div>
+    </div>
+  </div>
+</div>
+                  </textarea>
+                </div>
+              </article>
+
+                          <article class="mt-4">
+                <h2 class="text-info">Using data attributes</h2>
+                <p class="text-info">You can activate a list group navigation without writing any JavaScript by simply specifying data-toggle="list" or on an element. Use these data attributes on .list-group-item.</p>
+                <div class="mt-4">
+                  <!-- List group -->
+                  <div class="list-group" id="myList" role="tablist">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">Home</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Profile</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" role="tab">Messages</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings" role="tab">Settings</a>
+                  </div>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="home" role="tabpanel">You are viewing the <b>Home</b> tab of the list...</div>
+                    <div class="tab-pane" id="profile" role="tabpanel">You are viewing the <b>Profile</b> tab of the list...</div>
+                    <div class="tab-pane" id="messages" role="tabpanel">You are viewing the <b>Messages</b> tab of the list...</div>
+                    <div class="tab-pane" id="settings" role="tabpanel">You are viewing the <b>Settings</b> tab of the list...</div>
+                  </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <textarea name="" id="" cols="30" rows="10" class="form-control" disabled="true">
+<!-- List group -->
+<div class="list-group" id="myList" role="tablist">
+  <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">Home</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Profile</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" role="tab">Messages</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings" role="tab">Settings</a>
+</div>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel">You are viewing the Home tab of the list...</div>
+  <div class="tab-pane" id="profile" role="tabpanel">You are viewing the Profile tab of the list...</div>
+  <div class="tab-pane" id="messages" role="tabpanel">You are viewing the Messages tab of the list...</div>
+  <div class="tab-pane" id="settings" role="tabpanel">You are viewing the Settings tab of the list...</div>
+</div>
+                  </textarea>
+                </div>
+              </article>
+
+               <article class="mt-4">
+                <h2 class="text-info">Via JavaScript</h2>
+                <p class="text-info">Enable tabbable list item via JavaScript (each list item needs to be activated individually):</p>
+                <div class="mt-4">
+                  
+                </div>
+                <div class="mt-4">
+                  <textarea name="" id="" cols="30" rows="5" class="form-control" disabled="true">
+$('#myList a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+                  </textarea>
+
+                <p>You can activate individual list item in several ways:</p>
+
+                      <textarea name="" id="" cols="30" rows="5" class="form-control" disabled="true">
+$('#myList a[href="#profile"]').tab('show') // Select tab by name
+$('#myList a:first-child').tab('show') // Select first tab
+$('#myList a:last-child').tab('show') // Select last tab
+$('#myList a:nth-child(3)').tab('show') // Select third tab
+                  </textarea>
+
+                </div>
+              </article>
+
+              <article class="mt-4">
+                <h2 class="text-info">Fade effect</h2>
+                <p class="text-info">To make tabs panel fade in, add .fade to each .tab-pane. The first tab pane must also have .show to make the initial content visible.</p>
+                <div class="mt-4">
+                  
+                </div>
+                <div class="mt-4">
+                  <textarea name="" id="" cols="30" rows="6" class="form-control" disabled="true">
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="home" role="tabpanel">...</div>
+  <div class="tab-pane fade" id="profile" role="tabpanel">...</div>
+  <div class="tab-pane fade" id="messages" role="tabpanel">...</div>
+  <div class="tab-pane fade" id="settings" role="tabpanel">...</div>
+</div>
+                  </textarea>
+
+               
+                  
+                </div>
+              </article>
+
+                            <article class="mt-4">
+                <h2 class="text-info">Methods</h2>
+                <h4 class="text-info">$().tab</h4>
+
+                <p class="text-info">Activates a list item element and content container. Tab should have either a data-target or an href targeting a container node in the DOM.</p>
+                <div class="mt-4">
+                  
+                </div>
+                <div class="mt-4">
+                  <textarea name="" id="" cols="30" rows="10" class="form-control" disabled="true">
+<div class="list-group" id="myList" role="tablist">
+  <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">Home</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Profile</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" role="tab">Messages</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings" role="tab">Settings</a>
+</div>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel">...</div>
+  <div class="tab-pane" id="profile" role="tabpanel">...</div>
+  <div class="tab-pane" id="messages" role="tabpanel">...</div>
+  <div class="tab-pane" id="settings" role="tabpanel">...</div>
+</div>
+
+<script>
+  $(function () {
+    $('#myList a:last-child').tab('show')
+  })
+</script>
+                  </textarea>
+
+               
+                  
+                </div>
+              </article>
+
+                               
+              <article class="mt-4">
+                <h2 class="text-info">.tab(‘show’)</h2>
+                <p class="text-info">Selects the given list item and shows its associated pane. Any other list item that was previously selected becomes unselected and its associated pane is hidden. Returns to the caller before the tab pane has actually been shown (for example, before the shown.bs.tab event occurs).</p>
+                <div class="mt-4">
+                  
+                </div>
+                <div class="mt-4">
+                  <textarea name="" id="" cols="30" rows="1" class="form-control" disabled="true">
+$('#someListItem').tab('show')
+                  </textarea>
+
+               
+                  
+                </div>
+              </article>
+
+                     <article class="mt-4">
+                <h2 class="text-info">Events</h2>
+                <p class="text-info">When showing a new tab, the events fire in the following order:</p>
+                <div class="mt-4">
+
+                  <ol>
+  <li><code class="highlighter-rouge">hide.bs.tab</code> (on the current active tab)</li>
+  <li><code class="highlighter-rouge">show.bs.tab</code> (on the to-be-shown tab)</li>
+  <li><code class="highlighter-rouge">hidden.bs.tab</code> (on the previous active tab, the same one as for the <code class="highlighter-rouge">hide.bs.tab</code> event)</li>
+  <li><code class="highlighter-rouge">shown.bs.tab</code> (on the newly-active just-shown tab, the same one as for the <code class="highlighter-rouge">show.bs.tab</code> event)</li>
+</ol>
+
+<p>If no tab was already active, the <code class="highlighter-rouge">hide.bs.tab</code> and <code class="highlighter-rouge">hidden.bs.tab</code> events will not be fired.</p>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th style="width: 150px;">Event type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>show.bs.tab</td>
+      <td>This event fires on tab show, but before the new tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+    </tr>
+    <tr>
+      <td>shown.bs.tab</td>
+      <td>This event fires on tab show after a tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+    </tr>
+    <tr>
+      <td>hide.bs.tab</td>
+      <td>This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use <code>event.target</code> and <code>event.relatedTarget</code> to target the current active tab and the new soon-to-be-active tab, respectively.</td>
+    </tr>
+    <tr>
+      <td>hidden.bs.tab</td>
+      <td>This event fires after a new tab is shown (and thus the previous active tab is hidden). Use <code>event.target</code> and <code>event.relatedTarget</code> to target the previous active tab and the new active tab, respectively.</td>
+    </tr>
+  </tbody>
+</table>
+                  
+                </div>
+                <div class="mt-4">
+                  <textarea name="" id="" cols="30" rows="5" class="form-control" disabled="true">
+$('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
+  e.target // newly activated tab
+  e.relatedTarget // previous active tab
+})
+                  </textarea>               
+                  
+                </div>
               </article>
                   
     
@@ -197,6 +645,10 @@ Profile <span class="badge badge-light">9</span>
                     <img class="img-fluid" style="display: block; margin: auto;" width="25%" height="auto" alt="logo de estech" src="img/ESTECH_horizontal.png">
                 </footer>
             </div>
+
+           <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
        
             
     </body>
