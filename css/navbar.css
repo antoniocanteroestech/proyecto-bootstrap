@@ -1,0 +1,44 @@
+.header-container {
+    border-bottom: 20px solid #274156;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #274156;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #1C6E8C;
+}
+
+.title {
+    color: white;
+}
+/*
+.nav nav ul  {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav nav a {
+    display: block;
+    margin-bottom: 10px;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #274156;
+    float: right;
+    margin: 0 0.5%;
+    padding: 25px 1%;
+}
+*/
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
