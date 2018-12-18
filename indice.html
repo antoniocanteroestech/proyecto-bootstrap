@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Índice</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/no-aside.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
         <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -27,12 +28,22 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">Descubriendo Bootstrap</h1>
-                <nav>
-                    <ul>
-                        <li><a href="referencias.html">Referencias</a></li>
-                        <li><a href="index.html">Instrucciones</a></li>
+               <nav class="navbar navbar-expand-lg navbar-light">
+                  <h1 class="text-white">Descubriendo Bootstrap</h1>
+                  <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+                    <ul class="navbar-nav h5">
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="referencias.html">Referencias</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Instrucciones</a>
+                      </li>
                     </ul>
+                  </div>
                 </nav>
             </header>
         </div>
@@ -40,103 +51,103 @@
         <div class="main-container">
             <div class="main wrapper clearfix">
 
-                <article>
+                <article class="text-info">
                     <header>
-                        <h1>Indice de contenidos</h1>
-                        <p>A continuación se establecen las distintas seccionesj y una aproximación a sus contenidos. De vosotros y vuestra capacidad de síntesis y decisión depende el resto.</p>
+                        <h2 class="display-4">Indice de contenidos</h2>
+                        <p class="lead">A continuación se establecen las distintas seccionesj y una aproximación a sus contenidos. De vosotros y vuestra capacidad de síntesis y decisión depende el resto.</p>
                     </header>
-                    <section>
+                    <section class="mt-5">
                         <h2><a href="introduccion.html">Introducción</a></h2>
                         <p>
                             ¿Qué es Bootstrap? Además, en este apartado se deberán abordar otros aspectos como la instalación y configuración de bootstrap en nuestro proyecto.
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="gridsystem.html">Contenedores y sistema de rejilla</a></h2>
                         <p>
                            El sistema de contenedores y distribución de contenidos en columnas es uno de los puntos fuertes de bootstrap, ya que lo convierte en una herramienta bastante flexible para el diseño de nuestros sitios web. Además, en la versión 4 integra Flexbox.
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="responsive.html">Diseño Responsivo</a></h2>
                         <p>
                            Mobile first es la tendencia en el diseño web actual. Ver como se integra el diseño responsive al trabajar con Bootstrap es el objetivo de esta sección. Además se pueden comentar algunos aspectos de los @media de CSS) 
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="navbar.html">Navbar</a></h2>
                         <p>
                             Gran parte de la navegación de un sitio web se centraliza en el navbar. Bootstrap nos permite que este sea, por supuesto, responsivo. Además, hay otros elementos que ayudan a la navegación com el breadcrumb.
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="css.html">Elementos CSS</a></h2>
                         <p>
                             Muchas cosas de las que podíamos hacer con CSS se pueden hacer con este framework. En esta sección veremos un repaso a lo selementos CSS principales para el formateo de textos, márgenes, imágenes, etc... desde el punto de vista de un bootstrapiano.
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="panels.html">Paneles</a></h2>
                         <p>
                             Bootstrap permite establecer distintos tipos de paneles para incluir los distintos bloques de contenido de nuestras vistas.
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="cards.html">Tarjetas de presentación</a></h2>
                         <p>
                             Un sitio web es ante todo una herramienta de transmisión de la información de modo visual. Por ello estos tipos de elementos son muy importantes, ya que nos permiten sintetizar información y presentarla con una interfaz gráfica intuitiva y comprehensiva.
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="modales.html">Modales</a></h2>
                         <p>
                             Ayudan a establecer una mayor interacción con el usuario. Bootstrap nos facilita su implementación. Para los ejemplos requerirá algo de javascript.
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="alertas.html">Alertas</a></h2>
                         <p>
                             Una aplicación web debe guiar a los usuarios hacia la luz, y evitar que sea usada de un modo incorrecto. Para ellos las alertas cumplen un papel esencial.
                             Para los ejemplos requerirá algo de javascript.
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="badges.html">Badges</a></h2>
                         <p>
                             Otro modo en que las aplicaciones web muestran información al usuario, es a través de badges. Para informar de manera rápida y visual el número de notificaciones o emails que están aguardando ser leídas, por ejemplo.
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="tablas.html">Tablas</a></h2>
                         <p>
                             La esencia de una aplicación web es manejar información, y esa información debe ser mostrada por pantalla, en gran parte de las ocasiones por medio de tablas.
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="lists.html">Listas</a></h2>
                         <p>
                             Otro modo de mostrar conjuntos de datos es a través de listas.
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="carrusel_jumbotron.html">Carrousel y Jumbotron</a></h2>
                         <p>
                             Estos dos elementos nos permiten presentar imágenes de distintos modos, según nuestras necesidades.
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="scrollspy.html">Scrollspy</a></h2>
                         <p>
                             Vamos a dotar a nuestro sitio web de esta funcionalidad, para que la navegación sea aún más vistosa y funcinal.
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="formularios.html">Formularios</a></h2>
                         <p>
                             Son la entrada de información del usuario, y por tanto esenciales en cualquier sitio o aplicacion web.
                         </p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2><a href="multimedia.html"></a></h2>
                         <p>
                             Si hablamos de comunicación audiovisual, a nuestro sitio web le hace falta integrar de un modo ágil este tipo de contenidos. Bootstrap también tiene ayudas para ello.
@@ -154,7 +165,8 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
         <script src="js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>

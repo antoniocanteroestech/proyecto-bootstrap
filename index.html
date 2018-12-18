@@ -6,13 +6,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Instrucciones</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
         <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -26,49 +27,59 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">Descubriendo Bootstrap</h1>
-                <nav>
-                    <ul>
-                        <li><a href="referencias.html">Referencias</a></li>
-                        <li><a href="indice.html">Índice</a></li>
+               <nav class="navbar navbar-expand-lg navbar-light">
+                  <h1 class="text-white">Descubriendo Bootstrap</h1>
+                  <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+                    <ul class="navbar-nav h5">
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="referencias.html">Referencias</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="indice.html">Índice</a>
+                      </li>
                     </ul>
+                  </div>
                 </nav>
             </header>
         </div>
 
-        <div class="main-container">
+        <div class="main-container text-info">
             <div class="main wrapper clearfix">
 
                 <article>
                     <header>
-                        <h1>Instrucciones</h1>
-                        <p>Para llevar a cabo este diseño web colaborativo debéis tener en cuenta las siguientes instrucciones</p>
+                        <h2 class="display-4">Instrucciones</h2>
+                        <p class="lead">Para llevar a cabo este diseño web colaborativo debéis tener en cuenta las siguientes instrucciones</p>
                     </header>
-                    <section>
+                    <section class="mt-5">
                         <h2>Git</h2>
                         <p>Cada apartado tiene su/s página/s web propia/s. Además, deberéis trabajar cada uno de estos apartados en una rama individual de git, para evitar, en la medida de lo posible, que se produzcan conflictos a la hora de mezclar el código.</p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2>Estilos</h2>
                         <p>Aunque una de las características de Bootstrap es que los estilos se establecen desde el código html a través de las clases, es posible que necesitéis añadir estilos, para ello utilizaréis un archivo propio para cada página web.</p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2>Metodología cooperativa</h2>
                         <p>La evaluación de esta tarea va a ser global, esto quiere decir que vuestro éxito es el éxito de los demás, y vuestro fracaso el fracaso de los demás. Tanto los aspectos de diseño como de maquetación deben ser consensuados por todos, y aplicados a los diferentes contenidos que correspondan a cada uno. Además, debéis tener en cuenta que para la aplicación de los distintos contenidos, deberéis ayudar a vuestros compañeros a entender y aplicar los aspectos que os hayan correspondido a cada uno de vosotros desarrollar.</p>
                     </section>
-                    <section>
+                    <section class="mt-4">
                         <h2>Reparto de tareas</h2>
                         <p>Os corresponde a vosotros repartir las tareas. La única restricción es que cada uno de vosotros será responsable de dos apartados, tanto de desarrollarlos como de ayudar al resto de compañeros a que los entiendan e integren en sus respectivas secciones.
                         </p>
                     </section>
-                    <footer>
+                    <section class="mt-4">
                         <h3>Diseño</h3>
                         <p>El diseño proporcionado es solo una idea, sois libres de cambiarlo por completo, lo único que debe permanecer es la estructura (el index debe contener las instrucciones y un enlace al índice de contenidos).</p>
-                    </footer>
+                    </section>
                 </article>
 
                 <aside>
-                    <h3>Ejemplos</h3>
+                    <h3 class="my-3">Ejemplos</h3>
                     <p>Utilizad distintos componentes de maquetación para distinguir las explicaciones de los ejemplos. La distribución y formato es libre, aunque debéis procurar que la página web guarde una coherencia de estilos.</p>
                 </aside>
 
@@ -83,7 +94,8 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
         <script src="js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
