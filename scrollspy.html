@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>scrollspy</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/no-aside.css">
+
+</head>
+
+
+<body>
+
+	<div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">Descubriendo Bootstrap</h1>
+                <nav>
+                    <ul>
+                        <li><a href="referencias.html">Referencias</a></li>
+                        <li><a href="index.html">Instrucciones</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+<div class="container">
+
+<section>
+   	<article>
+   
+    <div class="text-info">
+    	<h2 class="header mt-4"> Scrollspy </h2>
+    		<p> The Scrollspy plugin is used to automatically update links in a navigation list based on scroll position.</p>
+    </div>
+    
+    <div class="article text-info mt-4">
+    	<h3> How it works </h3>
+    		<p> If you’re building our JavaScript from source, it requires util.js.
+				It must be used on a Bootstrap nav component or list group.
+    			Scrollspy requires position: relative; on the element you’re spying on, usually the <b>body</b>.
+    			When spying on elements other than the <b>body</b>, be sure to have a height set and overflow-y: scroll; applied.
+    			Anchors <b>a </b> are required and must point to an element with that id. </p>
+	</div>
+					
+	<textarea class="form-control" rows="10" readonly="true">
+
+	<nav id="navbar-example2" class="navbar navbar-light bg-light">
+		<a class="navbar-brand" href="#">Navbar</a>
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+		<a class="nav-link" href="#fat">@fat</a>
+				</li>
+				<li class="nav-item">
+		<a class="nav-link" href="#mdo">@mdo</a>
+				</li>
+				<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+<div class="dropdown-menu">							
+		<a class="dropdown-item" href="#one">one</a>
+		<a class="dropdown-item" href="#two">two</a>
+<div role="separator" class="dropdown-divider"></div>
+		<a class="dropdown-item" href="#three">three</a>
+</div>
+				</li>
+			</ul>
+	</nav>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+		<h4 id="fat">@fat</h4>
+			<p>...</p>
+		<h4 id="mdo">@mdo</h4>
+			<p>...</p>
+		<h4 id="one">one</h4>
+			<p>...</p>
+		<h4 id="two">two</h4>
+			<p>...</p>
+		<h4 id="three">three</h4>
+			<p>...</p>
+</div>						
+		
+	</textarea>
+
+	
+
+	<div class="article text-info mt-4">
+			<h3> Example with nested nav </h3>
+				<p> Scrollspy also works with nested .navs. If a nested .nav is .active, its parents will also be .active. </p>
+	</div>
+
+	<textarea class="form-control" rows="10" readonly="true">
+		<nav id="navbar-example3" class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+				<nav class="nav nav-pills flex-column">
+					<a class="nav-link" href="#item-1">Item 1</a>
+						<nav class="nav nav-pills flex-column">
+							<a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
+							<a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+						</nav>
+								<a class="nav-link" href="#item-2">Item 2</a>
+								<a class="nav-link" href="#item-3">Item 3</a>
+						<nav class="nav nav-pills flex-column">
+							<a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+							<a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+						</nav>
+				</nav>
+		</nav>
+
+	
+
+<div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+	<h4 id="item-1">Item 1</h4>
+		<p>...</p>
+	<h5 id="item-1-1">Item 1-1</h5>
+		<p>...</p>
+	<h5 id="item-1-2">Item 2-2</h5>
+		<p>...</p>
+	<h4 id="item-2">Item 2</h4>
+		<p>...</p>
+	<h4 id="item-3">Item 3</h4>
+		<p>...</p>
+	<h5 id="item-3-1">Item 3-1</h5>
+		<p>...</p>
+	<h5 id="item-3-2">Item 3-2</h5>
+		<p>...</p>
+</div>
+	</textarea>
+
+
+	<div class="article text-info mt-4">
+			<h3> Example with list-group </h3>	
+				<p> Scrollspy also works with .list-groups. </p>
+	</div>
+
+
+	<textarea class="form-control" rows="10" readonly="true">
+<div id="list-example" class="list-group">
+	<a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+	<a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+	<a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+	<a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+</div>
+
+<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+								  	
+	<h4 id="list-item-1">Item 1</h4>
+		<p>...</p>
+	<h4 id="list-item-2">Item 2</h4>
+		<p>...</p>
+	<h4 id="list-item-3">Item 3</h4>
+		<p>...</p>
+    <h4 id="list-item-4">Item 4</h4>
+		<p>...</p>
+</div>
+	</textarea>
+
+	</article>
+	<article>
+		<br>
+		<br>
+	<div class="article text-info mt-4">
+			<h2> Usage.</h2>
+			<h3> Via data attributes </h3>
+				<p> To easily add scrollspy behavior to your topbar navigation, add data-spy="scroll" to the element you want to spy on (most typically this would be the <b> body</b>). Then add the data-target attribute with the ID or class of the parent element of any Bootstrap .nav component. </p>
+	</div>
+		<textarea class="form-control" rows="5" readonly="true">
+body {
+position: relative;
+}
+		</textarea>
+		<br>
+		<br>
+		<textarea class="form-control" rows="10" readonly="true"> 
+	<body data-spy="scroll" data-target="#navbar-example">
+										  ...
+<div id="navbar-example">
+			<ul class="nav nav-tabs" role="tablist">
+				 ...
+			</ul>
+</div>
+				...
+	</body>
+		</textarea>
+
+	<div class="article text-info mt-4">
+		<h3> Via JavaScript </h3>
+			<p> After adding position: relative; in your CSS, call the scrollspy via JavaScript.</p>
+	</div>
+		<textarea class="form-control" rows="5" readonly="true"> 
+			$('body').scrollspy({ target: '#navbar-example' })
+
+		</textarea>
+
+	<div class="article text-info mt-4">
+		<h2> Methods </h2>
+			<h3> .scrollspy('refresh') </h3>
+				<p> When using scrollspy in conjunction with adding or removing of elements from the DOM, you’ll need to call the refresh method like so </p>
+	</div>
+
+
+		<textarea class="form-control" rows="5" readonly="true">
+$('[data-spy="scroll"]').each(function () {
+var $spy = $(this).scrollspy('refresh')
+})
+		</textarea>
+
+
+
+	<div class="article text-info mt-4">
+		<h3> .scrollspy('dispose') </h3>
+			<p> Destroys an element’s scrollspy. </p>
+	</div>	
+
+	<div class="article text-info mt-4">
+		<h2> Options </h2>
+			<p> Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-offset="".</p>
+	</div>
+
+	<div class="article text-info mt-4">
+		<h2> Events </h2>
+	</div>
+
+		<textarea class="form-control" rows="5" readonly="true"> 
+$('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
+// do something…
+		})
+		</textarea>
+
+		</article>
+
+
+	</section>
+</div>
+
+
+
+
+
+<div class="footer-container">
+            <footer class="wrapper">
+                <img class="img-fluid" style="display: block; margin: auto;" width="25%" height="auto" alt="logo de estech" src="img/ESTECH_horizontal.png">
+            </footer>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+
+</body>
+</html>
